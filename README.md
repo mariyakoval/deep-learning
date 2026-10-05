@@ -43,3 +43,13 @@ identical data splits. This isolates the contribution of the news sentiment bran
 - News sentiment coverage may be sparse or noisy on some trading days.
 - A Transformer architecture needs a lot of data; we mitigate this by keeping the model small 
   (2-4 layers) and comparing against the simpler baseline
+## Setup and data pipeline
+
+    pip install -r requirements.txt && pip install -e .
+    huggingface-cli login      # news dataset is gated; accept terms on the dataset page first
+    python scripts/01_download_data.py
+    python scripts/02_make_regimes.py
+    python scripts/04_build_dataset.py
+    python scripts/03_embed_news.py
+
+Outputs go to `data/` (git-ignored). News coverage is 2009-05 to 2023-12, so the news model is evaluated on that window.

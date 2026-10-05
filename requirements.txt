@@ -1,0 +1,11 @@
+pandas
+numpy
+pyarrow
+yfinance
+hmmlearn
+datasets
+transformers
+torch
+lxml
+tqdm
+matplotlib
