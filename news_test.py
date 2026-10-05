@@ -1,14 +1,22 @@
-from datasets import load_dataset
+import duckdb
+import pandas as pd
 
-dataset = load_dataset(
-    "Brianferrell787/financial-news-multisource",
-    "fnspid_news",
-    streaming=True
-)
+con = duckdb.connect()
 
-train = dataset["train"]
+df = con.execute("""
+    SELECT
+        date,
+        date_trading,
+        publisher,
+        stocks,
+        LEFT(text, 250) AS text_preview
+    FROM read_parquet('Data/sp500_news_final.parquet')
+    LIMIT 10
+""").fetchdf()
 
-first_row = next(iter(train))
+pd.set_option("display.max_colwidth", None)
+pd.set_option("display.max_columns", None)
 
-print(first_row)
-print(first_row.keys())
+print(df.to_string(index=False))
+
+con.close()

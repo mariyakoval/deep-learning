@@ -1,2 +1,3 @@
 backend.env
 venv/
+Data/sp500_news_final.parquet
