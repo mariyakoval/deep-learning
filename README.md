@@ -53,15 +53,15 @@ Names to fill in before submitting.
 
 | Weeks | Work | Who |
 |---|---|---|
-| 1-2 | Data pipeline: prices, macro, news, FinBERT embeddings, HMM regimes. **Done.** | [name] |
-| 3 | Persistence baselines. Price-only Transformer with regime head. | [name] |
-| 4-5 | News branch: Transformer encoder with cross-attention over daily news embeddings. | [name] |
-| 6 | First full training run on the news model. Go/no-go check on whether the data is enough. | [name], [name] |
-| 7-8 | Add the volatility head. Tune the combined loss and class weights. | [name] |
-| 9-10 | Full test-set evaluation against all baselines, several random seeds. | [name] |
-| 11-12 | Event analysis: COVID, the 2022 bear market, SVB. Ablations (news embeddings vs sentiment scores only). | [name], [name] |
-| 13 | Figures and write-up. | everyone |
-| 14 | Final presentation and buffer. | everyone |
+| 1-2 | Data pipeline: prices, macro, news, FinBERT embeddings, HMM regimes. **Done.** | Prisha & Mariia (Initial Pass) |
+| 3 | Persistence baselines. Price-only Transformer with regime head. | Prisha (Initial Pass) & Mariia |
+| 4-5 | News branch: Transformer encoder with cross-attention over daily news embeddings. | Prisha & Mariia (Initial Pass) |
+| 6 | First full training run on the news model. Go/no-go check on whether the data is enough. | both |
+| 7-8 | Add the volatility head. Tune the combined loss and class weights. | Prisha (Initial Pass) & Mariia  |
+| 9-10 | Full test-set evaluation against all baselines, several random seeds. | Prisha & Mariia (Initial Pass) |
+| 11-12 | Event analysis: COVID, the 2022 bear market, SVB. Ablations (news embeddings vs sentiment scores only). | both |
+| 13 | Figures and write-up. | both |
+| 14 | Final presentation and buffer. | both |
 
 ## 6. The risk
 
