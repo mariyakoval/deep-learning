@@ -11,3 +11,4 @@ __pycache__/
 .DS_Store
 *.pt
 >>>>>>> 8d2271a (Add data pipeline: prices, FRED macro, news, FinBERT, HMM regimes)
+*.code-workspace
