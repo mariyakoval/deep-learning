@@ -4,7 +4,7 @@ venv/
 Data/sp500_news_final.parquet
 =======
 .venv/
-data/
+/data/
 .venv/
 __pycache__/
 *.egg-info/
