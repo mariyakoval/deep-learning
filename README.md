@@ -49,8 +49,6 @@ Accuracy alone is misleading here, since "never predict crisis" is already 87% a
 
 ## 5. The plan
 
-Names to fill in before submitting.
-
 | Weeks | Work | Who |
 |---|---|---|
 | 1-2 | Data pipeline: prices, macro, news, FinBERT embeddings, HMM regimes. **Done.** | Prisha & Mariia (Initial Pass) |
