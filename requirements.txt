@@ -9,3 +9,4 @@ torch
 lxml
 tqdm
 matplotlib
+pyarrow
