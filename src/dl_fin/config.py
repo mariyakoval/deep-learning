@@ -17,6 +17,9 @@ FINBERT = "ProsusAI/finbert"
 
 N_REGIMES = 3
 HMM_TRAIN_END = "2017-12-31"     # fit HMM on train period only to limit leakage
+# (start, end) inclusive; train starts when news coverage begins. Pass to MarketDataset(start=, end=).
+SPLITS = {"train": ("2009-05-01", "2017-12-31"), "val": ("2018-01-01", "2019-12-31"),
+          "test": ("2020-01-01", "2023-12-31")}
 WINDOW = 60                      # lookback days fed to the Transformer
 VOL_HORIZON = 5                  # forward realized-vol horizon (days)
 CRISES = {"GFC": ("2008-09-01", "2009-03-31"), "COVID": ("2020-02-20", "2020-04-30"),
