@@ -54,7 +54,7 @@ Accuracy alone is misleading with a rare crisis class, so we report macro-F1, cr
 | Model | Params | Macro-F1 | Crisis recall | Accuracy | Vol MAE | Vol RMSE |
 |---|---|---|---|---|---|---|
 | Majority | 0 | 0.151 | 0.000 | 0.292 | 0.093 | 0.165 |
-| Persistence | 0 | 0.543 | 0.574 | 0.542 | 0.078 | 0.116 |
+| Persistence | 0 | 0.543 | 0.574 | 0.541 | 0.077 | 0.116 |
 | 1D CNN (5 seeds) | 4,356 | 0.587 ± 0.015 | 0.765 ± 0.023 | 0.581 ± 0.015 | 0.069 ± 0.003 | 0.129 ± 0.009 |
 
 The CNN sees the last 20 days of log return, 21-day vol, relative volume and high-low range. Window, channels, learning rate and feature set were picked on validation loss only (`results/hparam_search.csv`). Macro features were dropped by that search: fed funds in the test years sits up to 19 train standard deviations above its training mean. Everything is produced by `notebooks/milestone1.ipynb`.
