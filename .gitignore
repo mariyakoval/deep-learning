@@ -6,6 +6,7 @@ venv/
 !/data/processed/
 /data/processed/*
 !/data/processed/table.parquet
+!/data/processed/news_count.parquet
 __pycache__/
 *.egg-info/
 .DS_Store

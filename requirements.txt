@@ -5,6 +5,7 @@ pyarrow==21.0.0
 scikit-learn==1.6.1
 torch==2.8.0
 matplotlib==3.9.4
+hmmlearn==0.3.3
 nbconvert==7.17.2
 ipykernel==6.31.0
 # only needed to re-download data or re-embed news (scripts/)
