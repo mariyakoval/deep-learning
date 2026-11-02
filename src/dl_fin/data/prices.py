@@ -12,5 +12,6 @@ def add_price_features(df: pd.DataFrame) -> pd.DataFrame:
     o["log_ret"] = np.log(o.Close).diff()
     o["rv_21"] = o.log_ret.rolling(21).std() * np.sqrt(252)
     o["log_volume"] = np.log(o.Volume.replace(0, np.nan))
+    o["rel_volume"] = o.log_volume - o.log_volume.rolling(252).mean()   # volume vs its trailing 1-year mean (raw volume trends)
     o["hl_range"] = np.log(o.High / o.Low)
     return o.dropna()

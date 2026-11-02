@@ -16,7 +16,7 @@ MAX_ARTICLES_PER_DAY = 50                                    # bounds FinBERT co
 FINBERT = "ProsusAI/finbert"
 
 N_REGIMES = 3
-HMM_TRAIN_END = "2017-12-31"     # fit HMM on train period only to limit leakage
+REGIME_QUANTILES = (0.50, 0.87)  # train-set quantiles of forward vol: calm < 50% < middle < 87% < crisis
 # (start, end) inclusive; train starts when news coverage begins. Pass to MarketDataset(start=, end=).
 SPLITS = {"train": ("2009-05-01", "2017-12-31"), "val": ("2018-01-01", "2019-12-31"),
           "test": ("2020-01-01", "2023-12-31")}

@@ -6,7 +6,7 @@ from dl_fin.features.finbert import embed_texts
 
 CHUNK = 10_000
 news = pd.read_parquet(C.RAW / "news.parquet")
-td = pd.read_parquet(C.INTERIM / "prices_regimes.parquet").index
+td = pd.read_parquet(C.INTERIM / "prices.parquet").index
 
 # non-trading-day articles (weekends/holidays) -> NEXT trading day (no look-ahead)
 pos = td.searchsorted(news["date"].values)

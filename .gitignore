@@ -1,10 +1,14 @@
 backend.env
 venv/
 .venv/
-/data/
-/Data/
+# data/ is rebuilt by scripts/, except the processed table snapshot the notebook runs on
+/data/*
+!/data/processed/
+/data/processed/*
+!/data/processed/table.parquet
 __pycache__/
 *.egg-info/
 .DS_Store
 *.pt
 *.code-workspace
+.ipynb_checkpoints/
